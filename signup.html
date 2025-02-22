@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signUpForm">
+      <div class="input-group">
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" required />
+      </div>
+      <div class="input-group">
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" required />
+      </div>
+      <button type="submit">Sign Up</button>
+      <p id="error-message" class="error"></p>
+    </form>
+
+    <p>Already have an account? <a href="index.html">Sign In</a></p>
+  </div>
+
+  <div id="kickoutMessage" class="kickout-message">
+    <h2>You're Forbidden!</h2>
+    <p>Goodbye...</p>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
